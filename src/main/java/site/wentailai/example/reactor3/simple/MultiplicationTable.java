@@ -10,6 +10,10 @@ import reactor.core.publisher.Flux;
  */
 @Slf4j
 public class MultiplicationTable {
+    /**
+     * 打印99乘法表
+     * @return
+     */
     public Flux<String> getMultiplicationTable() {
         return Flux.range(1, 9)
                 .flatMap(x -> Flux.range(1, x)
