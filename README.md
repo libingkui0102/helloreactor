@@ -16,6 +16,9 @@ spring5 reactor3使用实例
 reactor3中flatmap的花样更多。想比java8 中Stream的单一功能，reactor3中的
 flatmap有各种姿势的实现，细节参考文档。
 - materialize 把接收数据改为接收信号
+- generate, push和create
+  - generate 通过一个初始值和一个产生后续值的function创建一串“数据”。
+  - push和create类似，不同的是push只用一个线程，create可以使用多个线程。
 
   
   
